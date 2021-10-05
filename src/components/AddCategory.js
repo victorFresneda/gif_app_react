@@ -14,7 +14,7 @@ const AddCategory = ({setCategories}) => {
         e.preventDefault();
 
         if( inptValue.trim().length > 2) {
-            setCategories( cats => [...cats, inptValue]);
+            setCategories( cats => [inptValue, ...cats]);
             setinptValue('');
         }
         
