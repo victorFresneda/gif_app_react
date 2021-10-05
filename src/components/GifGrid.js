@@ -4,13 +4,13 @@ import { GifGridItem } from './GifGridItem';
 
 const GifGrid = ( { categoria } ) => {
 
-    const {data, loading} = useFetchGifs( categoria);
+    const {data} = useFetchGifs( categoria);
 
-    console.log(data, loading)
+    
 
     return (
         <>
-            <h3> { categoria } </h3>
+            <h3 className="animate__animated animate__bounceInLeft"> { categoria } </h3>
 
             
 

@@ -25,7 +25,7 @@ const AddCategory = ({setCategories}) => {
         
         <form onSubmit={ handleSubmit }>
             <input 
-                placeholder="Ingresa el nombre de la serie"
+                placeholder="Que buscas?"
                 type="text"
                 value={ inptValue}
                 onChange={ handleInputChange }

@@ -5,7 +5,7 @@ import React from 'react'
     
 
     return (
-        <div className="card">
+        <div className="card animate__animated animate__bounceInUp animate__delay-1s">
             <img src={ url } alt={ title }/>
             <p> { title } </p>
         </div>
