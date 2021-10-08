@@ -1,10 +1,10 @@
-import React,{ useState} from 'react';
+import React,{ Fragment, useState} from 'react';
 import AddCategory from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
 
 
-function GifExpertApp() {
+export function GifExpertApp() {
 
     const [categories, setCategories] = useState(['']);
 
@@ -12,7 +12,7 @@ function GifExpertApp() {
 
     return (
 
-        <>
+        <Fragment>
             <h2>Gif App</h2>
             <AddCategory  setCategories={ setCategories }/>
             <hr />
@@ -32,7 +32,7 @@ function GifExpertApp() {
                 }
                 
             </ol>
-        </>
+        </ Fragment>
     );
 }
 

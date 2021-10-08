@@ -9,7 +9,7 @@ const GifGrid = ( { categoria } ) => {
     
 
     return (
-        <>
+        <div>
             <h3 className="animate__animated animate__bounceInLeft"> { categoria } </h3>
 
             
@@ -27,7 +27,7 @@ const GifGrid = ( { categoria } ) => {
                     }
 
             </div>
-        </>
+        </ div>
     )
 }
 
