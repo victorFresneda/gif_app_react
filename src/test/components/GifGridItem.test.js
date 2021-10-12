@@ -28,7 +28,7 @@ describe('Pruebas en <GifGridItem />', () => {
     test('debe de tener la imagen igual al url y alt de los props ', () => {
         
         const img = wrapper.find('img');
-        // console.log( img.html() )
+        
 
         expect( img.prop('src')).toBe( url );
         expect( img.prop('alt')).toBe( title );
@@ -37,8 +37,6 @@ describe('Pruebas en <GifGridItem />', () => {
     test('Debe de tener card animate__animated animate__bounceInUp animate__delay-1s', () => {
 
         const div = wrapper.find( 'div' );
-        console.log(div.prop('className') )
-        // expect(div.text).toBe('animate_fadeIn');
         expect(div.prop('className').includes('animate__delay-1s')).toBe(true);
         
     })

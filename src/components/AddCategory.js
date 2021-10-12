@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PropTypes  from 'prop-types'
+import PropTypes  from 'prop-types'        
 
 const AddCategory = ({setCategories}) => {
 
@@ -7,7 +7,7 @@ const AddCategory = ({setCategories}) => {
 
     const handleInputChange = (e) => {
         setinptValue(e.target.value);
-        
+        console.log('llamado necesario')
     }
 
     const handleSubmit = (e) => {
